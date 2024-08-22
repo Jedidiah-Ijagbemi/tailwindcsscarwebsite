@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carvilla Website with Tailwindcss</title>
+  <!-- Links -->
+  <link rel="icon" href="./images/vite.svg" />
+  <link rel="stylesheet" href="./output.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css"
+    integrity="sha512-B46MVOJpI6RBsdcU307elYeStF2JKT87SsHZfRSkjVi4/iZ3912zXi45X5/CBr/GbCyLx6M1GQtTKYRd52Jxgw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="bg-black p-6 text-white">
+    <div class="container mx-auto flex flex-row justify-between lg:w-[80%]">
+      <h1 class="text-center lg:text-start">CARVILLA</h1>
+      <ul class="lg:flex lg:flex-row md:flex md:flex-row sm:flex sm:flex-row hidden">
+        <li class="me-4 text-blue-500">
+          <a href="./index.html">Home</a>
+        </li>
+        <li class="me-4 hover:text-blue-400">
+          <a href="./index.html">Services</a>
+        </li>
+        <li class="me-4 hover:text-blue-400">
+          <a href="./index.html">Featured cars</a>
+        </li>
+        <li class="me-4 hover:text-blue-400">
+          <a href="./index.html">New Cars</a>
+        </li>
+        <li class="me-4 hover:text-blue-400">
+          <a href="./index.html">Brands</a>
+        </li>
+        <li class="me-4 hover:text-blue-400">
+          <a href="./index.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Hero section -->
+  <main>
+    <!-- hero image -->
+    <div class="hero bg-[url('./images/heroSection.jpg')] max-h-[50rem] bg-no-repeat bg-cover w-full bg-center">
+      <div class="container mx-auto py-20 sm:py-20 md:py-36 lg:py-64">
+        <h1 class="sm:text-2xl md:text-3xl lg:text-4xl text-center text-white font-bold">
+          GET YOUR DESIRED CAR IN REASONABLE PRICE
+        </h1>
+        <p class="text-center text-base text-white">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+
+        <div class="text-center mt-4">
+          <a href="#contact"
+            class="px-8 py-2 text-white bg-blue-500 hover:bg-blue-600 rounded-md text-center w-full cursor-pointer">Contact
+            Us</a>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="container mx-auto p-3 shadow-sm"> -->
+    <!--  -->
+    <div
+      class="container mx-auto p-3 rounded-lg grid grid-cols-1 md:grid-cols-4 gap-2 shadow-2xl w-[90%] -mt-20 lg:max-w-[70%] bg-white">
+      <div class="flex-flex-col p-4">
+        <div class="flex flex-col">
+          <label for="text" class="text-center">Select Year</label>
+          <input type="text" name="text" class="mt-2 bg-slate-200 rounded-md text-center py-2" placeholder="2024" />
+        </div>
+        <div class="flex flex-col mt-4">
+          <label for="text" class="text-center">Body Style</label>
+          <input type="text" name="text" class="mt-2 bg-slate-200 rounded-md text-center py-2" placeholder="Smooth" />
+        </div>
+      </div>
+      <div class="flex-flex-col p-4">
+        <div class="flex flex-col">
+          <label for="text" class="text-center">Make</label>
+          <input type="text" name="text" class="mt-2 bg-slate-200 rounded-md text-center py-2" placeholder="Toyota" />
+        </div>
+        <div class="flex flex-col mt-4">
+          <label for="text" class="text-center">Car Condition</label>
+          <input type="text" name="text" class="mt-2 bg-slate-200 rounded-md text-center py-2"
+            placeholder="Automatic" />
+        </div>
+      </div>
+      <div class="flex-flex-col p-4">
+        <div class="flex flex-col">
+          <label for="text" class="text-center">Select Model</label>
+          <input type="text" name="text" class="mt-2 bg-slate-200 rounded-md text-center py-2" placeholder="E350" />
+        </div>
+        <div class="flex flex-col mt-4">
+          <label for="text" class="text-center">Select Price</label>
+          <input type="text" name="text" class="mt-2 bg-slate-200 rounded-md text-center py-2" placeholder="$50,000" />
+        </div>
+      </div>
+      <div class="flex flex-col align-middle p-3">
+        <button type="button" class="bg-blue-500 hover:bg-blue-600 text-white rounded-md p-2 mt-16">
+          Search
+        </button>
+      </div>
+    </div>
+
+    <!-- Search div -->
+    <div
+      class="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 cursor-pointer mx-auto w-[75%] gap-3 mt-10 mb-10">
+      <div class="border py-5 px-3 hover:bg-blue-500 hover:text-white flex flex-col rounded-xl shadow-md">
+        <div class="mx-auto mb-1">
+          <img src="./images/download.jfif" class="w-16" />
+        </div>
+        <h5 class="text-lg text-center">Largest Dealership of Car</h5>
+        <p class="text-center text-base">
+          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+          den fugit sed quia.
+        </p>
+      </div>
+      <div class="border py-5 px-3 hover:bg-blue-500 hover:text-white flex flex-col rounded-xl shadow-md">
+        <div class="mx-auto mb-1">
+          <img src="./images/download (2).png" class="w-16" />
+        </div>
+        <h5 class="text-lg text-center">Unlimited Repair Warranty</h5>
+        <p class="text-center text-base">
+          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+          den fugit sed quia.
+        </p>
+      </div>
+      <div class="border py-5 px-3 hover:bg-blue-500 hover:text-white flex flex-col rounded-xl shadow-md">
+        <div class="mx-auto mb-1">
+          <img src="./images/download (1).png" class="w-16" />
+        </div>
+        <h5 class="text-lg text-center">Insurance Support</h5>
+        <p class="text-center text-base">
+          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+          den fugit sed quia.
+        </p>
+      </div>
+      <div class="border py-5 px-3 hover:bg-blue-500 hover:text-white flex flex-col rounded-xl shadow-md">
+        <div class="mx-auto mb-1">
+          <img src="./images/download.png" class="w-16" />
+        </div>
+        <h5 class="text-lg text-center">Some text</h5>
+        <p class="text-center text-base">
+          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+          den fugit sed quia.
+        </p>
+      </div>
+    </div>
+    <!-- Newwest Cars Section -->
+    <section class="bg-slate-200 p-4 container mx-auto rounded-lg mt-1">
+      <div class="container mx-auto p-4">
+        <h5 class="text-base text-center">Check out the latest Cars</h5>
+        <h4 class="text-xl text-center border-b-blue-600">Newest Cars</h4>
+        <div class="container mx-auto p-2 mt-6 flex flex-row">
+          <div class="p-1">
+            <img src="./images/ncm2.png" />
+          </div>
+          <div class="p-2">
+            <h1 class="text-lg text-center">Ferrari 488 SuperFast</h1>
+            <p class="text-center text-balance">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+              laboriosam veritatis possimus repellendus vero eum, consectetur
+              sequi id voluptatum.
+            </p>
+            <div class="text-center mt-3">
+              <button class="p-2 rounded-md text-white bg-blue-500 hover:bg-blue-600">
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Featured Cars section -->
+    <div class="bg-slate-100 p-3 mt-4">
+      <!-- Heading -->
+      <div class="container mx-auto p-2 text-center border-b-blue-500">
+        <h1 class="text-base">Check out the featured Cars</h1>
+        <p class="text-lg mt-3">Featured Cars</p>
+      </div>
+      <div class="container mx-auto p-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+        <div class="flex flex-col">
+          <div class="mb-2 mx-auto">
+            <img src="./images/fc4.png" class="border-2 p-5 border-gray-500 max-w-64" />
+          </div>
+          <p class="text-base text-center mt-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+            maxime repellat accusamus optio fugiat neque.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="mb-2 mx-auto">
+            <img src="./images/fc2.png" class="border-2 p-5 border-gray-500 w-64" />
+          </div>
+          <p class="text-base text-center mt-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+            maxime repellat accusamus optio fugiat neque.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="mb-2 mx-auto">
+            <img src="./images/fc1.png" class="border-2 p-5 border-gray-500 w-64" />
+          </div>
+          <p class="text-base text-center mt-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+            maxime repellat accusamus optio fugiat neque.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="mb-2 mx-auto">
+            <img src="./images/fc5.png" class="border-2 p-5 border-gray-500 w-64" />
+          </div>
+          <p class="text-base text-center mt-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+            maxime repellat accusamus optio fugiat neque.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="mb-2 mx-auto">
+            <img src="./images/fc8.png" class="border-2 p-5 border-gray-500 w-64" />
+          </div>
+          <p class="text-base text-center mt-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+            maxime repellat accusamus optio fugiat neque.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="mb-2 mx-auto">
+            <img src="./images/fc7.png" class="border-2 p-5 border-gray-500 w-64" />
+          </div>
+          <p class="text-base text-center mt-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+            maxime repellat accusamus optio fugiat neque.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="mb-2 mx-auto">
+            <img src="./images/fc3.png" class="border-2 p-5 border-gray-500 w-64" />
+          </div>
+          <p class="text-base text-center mt-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+            maxime repellat accusamus optio fugiat neque.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="mb-2 mx-auto">
+            <img src="./images/fc4.png" class="border-2 p-5 border-gray-500 w-64" />
+          </div>
+          <p class="text-base text-center mt-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+            maxime repellat accusamus optio fugiat neque.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials section -->
+    <div class="bg-white p-3">
+      <div class="container mx-auto p-2">
+        <h1 class="text-xl mt-5 text-center">What Our Clients Say</h1>
+        <div class="mt-4 container mx-auto gap-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="flex flex-col mt-2 p-4 border-2">
+            <div class="mx-auto">
+              <img src="./images/c3.png" class="rounded-full" />
+            </div>
+            <div class="flex flex-col mt-3">
+              <p class="text-center text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit
+                quam non libero ab in quasi tempora ut nobis fuga minus.
+              </p>
+              <p class="font-bold text-center">Romi Rain</p>
+            </div>
+          </div>
+          <div class="flex flex-col mt-2 p-4 border-2">
+            <div class="mx-auto">
+              <img src="./images/c1.png" class="rounded-full" />
+            </div>
+            <div class="flex flex-col mt-3">
+              <p class="text-center text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit
+                quam non libero ab in quasi tempora ut nobis fuga minus.
+              </p>
+              <p class="font-bold text-center">Romi Rain</p>
+            </div>
+          </div>
+          <div class="flex flex-col mt-2 p-4 border-2">
+            <div class="mx-auto">
+              <img src="./images/c2.png" class="rounded-full" />
+            </div>
+            <div class="flex flex-col mt-3">
+              <p class="text-center text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit
+                quam non libero ab in quasi tempora ut nobis fuga minus.
+              </p>
+              <p class="font-bold text-center">Romi Rain</p>
+            </div>
+          </div>
+          <div class="flex flex-col mt-2 p-4 border-2">
+            <div class="mx-auto">
+              <img src="./images/vite.svg" class="rounded-full" />
+            </div>
+            <div class="flex flex-col mt-3">
+              <p class="text-center text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit
+                quam non libero ab in quasi tempora ut nobis fuga minus.
+              </p>
+              <p class="font-bold text-center">Romi Rain</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Credits section -->
+    <div class="p-10 mt-3 flex flex-row mx-auto bg-slate-100 rounded-md">
+      <div class="me-auto">
+        <img src="./images/br1.png" alt="#" />
+      </div>
+      <div class="me-auto">
+        <img src="./images/br2.png" alt="" />
+      </div>
+      <div class="me-auto">
+        <img src="./images/br3.png" alt="" />
+      </div>
+      <div>
+        <img src="./images/br4.png" alt="" />
+      </div>
+    </div>
+  </main>
+  <!-- Footer section -->
+  <footer class="bg-slate-500 text-white py-16 px-14">
+    <div class="container mx-auto p-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-9 mb-3">
+      <div class="flex flex-col">
+        <h1 class="text-lg">CARVILLA</h1>
+        <p class="text-base">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+          voluptatibus dolorum mollitia optio voluptas officia nihil atque
+          alias.
+        </p>
+      </div>
+      <div class="flex flex-col">
+        <h1 class="text-lg">ABOUT DEVLOON</h1>
+        <ul class="flex flex-col">
+          <li>About Us</li>
+          <li>Career</li>
+          <li>Terms of Service</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+      <div class="flex flex-col">
+        <h1 class="text-lg">TOP BRANDS</h1>
+        <ul class="flex flex-col">
+          <li>BMW</li>
+          <li>AUDI</li>
+          <li>NISSAN</li>
+          <li>CAMARO</li>
+        </ul>
+      </div>
+      <div class="flex flex-col">
+        <ul class="flex flex-col">
+          <li>FERRARI</li>
+          <li>PORSHE</li>
+          <li>LAND ROVER</li>
+          <li>MERCEDEZ</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container mx-auto border-t">
+      <div class="container mx-auto flex flex-row justify-between mt-10">
+        <h1 class="text-base">
+          &copy; Copyright. Designed and Developed by Jedidiah
+        </h1>
+        <a href="#">
+          <img src="./images/download (3).png" class="w-64" />
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
